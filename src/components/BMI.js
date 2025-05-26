@@ -10,7 +10,7 @@ const BmiCalculator = () => {
             Body Mass Index (BMI) = 23
           </div>
           <div className={`bmi-category`}>
-            Underweight(s)
+            Underweight
           </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import React from 'react'
+import BmiCalulator from './BmiCalulator';
 
-const BmiCalculator = () => {
+const BMI = () => {
   return (
     <div className='Calculator'>
       <h1>Body Mass Index Calculator</h1>
@@ -14,9 +15,9 @@ const BmiCalculator = () => {
           </div>
         </div>
       </div>
-      <BmiCalculator />
+      <BmiCalulator />
     </div>
   )
 }
 
-export default BmiCalculator
+export default BMI;

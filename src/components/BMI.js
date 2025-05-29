@@ -14,6 +14,7 @@ const BmiCalculator = () => {
           </div>
         </div>
       </div>
+      <BmiCalculator />
     </div>
   )
 }

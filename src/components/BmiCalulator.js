@@ -1,8 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import FormInput from './FormInput';
 
 const BmiCalulator = () => {
+  const [height, setHeightUnit] = useState('');
+  const [weightUnit, setWeightUnit] = useState('');
+  const [unit, setUnit] = useState('');
+
   const onChangeInput = e => {};
+
+  const onSelectTag = e => {
+    setUnit(e.target.value);
+  };
+
   return (
     <>
       <div className='bmi-inputs'>
@@ -10,7 +19,7 @@ const BmiCalulator = () => {
           <div>
             <span className='label-unit'>Unit</span>
             <div className='unit'>
-              <select name='unit' value='' className='form-control form-control-sm'>
+              <select name='unit' value={unit} onChange={onSelectTag} className='form-control form-control-sm'>
                 <option value="Metric">Metric</option>
                 <option value="Imperial">Imperial</option>
               </select>

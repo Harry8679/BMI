@@ -3,7 +3,7 @@ import BmiCalulator from './BmiCalulator';
 
 const BMI = () => {
   return (
-    <div className='Calculator'>
+    <div className='calculator'>
       <h1>Body Mass Index Calculator</h1>
       <div className="bmi-result-container">
         <div className="bmi-result">

@@ -10,6 +10,13 @@ const BmiCalulator = () => {
 
   const onSelectTag = e => {
     setUnit(e.target.value);
+    if (e.target.value === 'Metric') {
+      setHeightUnit('cm');
+      setWeightUnit('kg');
+    } else {
+      setHeightUnit('ft');
+      setWeightUnit('lbs');
+    }
   };
 
   return (

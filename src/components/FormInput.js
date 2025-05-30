@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const FormInput = props => {
   const { name, type, title, value, onChange } = props;
@@ -12,5 +13,12 @@ const FormInput = props => {
     </div>
   )
 }
+
+FormInput.propTypes = {
+  title: PropTypes.string,
+  value: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired,
+  type: PropTypes.oneOf(['text', 'password', 'number'])
+};
 
 export default FormInput;

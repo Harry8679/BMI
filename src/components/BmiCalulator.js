@@ -2,6 +2,7 @@ import React from 'react'
 import FormInput from './FormInput';
 
 const BmiCalulator = () => {
+  const onChangeInput = e => {};
   return (
     <>
       <div className='bmi-inputs'>
@@ -15,7 +16,7 @@ const BmiCalulator = () => {
               </select>
             </div>
           </div>
-          <FormInput type='text' name='heightCount' title={`Height (cm)`} value='' onChange={onChange} />
+          <FormInput type='text' name='heightCount' title={`Height (cm)`} value='' onChange={onChangeInput} />
         </div>
         <button className='button' type='submit'>Reset</button>
       </div>

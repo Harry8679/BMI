@@ -4,11 +4,11 @@ const BmiCalulator = () => {
   return (
     <>
       <div className='bmi-inputs'>
-        <div className="input-fields">
+        <div className="inputs-fields">
           <div>
             <span className='label-unit'>Unit</span>
-            <div className="unit">
-              <select name="unit" value="" className='form-control form-control-sm'>
+            <div className='unit'>
+              <select name='unit' value='' className='form-control form-control-sm'>
                 <option value="Metric">Metric</option>
                 <option value="Imperial">Imperial</option>
               </select>
@@ -16,6 +16,7 @@ const BmiCalulator = () => {
           </div>
           <input type="text" />
         </div>
+        <button className='button' type='submit'>Reset</button>
       </div>
     </>
   )

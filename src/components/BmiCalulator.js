@@ -31,6 +31,7 @@ const BmiCalulator = () => {
                 <option value="Imperial">Imperial</option>
               </select>
             </div>
+            
           </div>
           <FormInput type='text' name='heightCount' title={`Height (cm)`} value='' onChange={onChangeInput} />
           <FormInput type='text' name='inchesCount' title={`(in)`} value='' onChange={onChangeInput} />

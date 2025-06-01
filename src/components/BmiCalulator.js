@@ -7,7 +7,11 @@ const BmiCalulator = () => {
   const [unit, setUnit] = useState('');
 
   useEffect(() => {
-    console.log(unit)
+    if (unit === '') {
+      setUnit('Metric');
+      setHeightUnit('cm');
+      setWeightUnit('kg');
+    }
   }, [unit]);
 
   const onChangeInput = e => {};

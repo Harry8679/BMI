@@ -1,10 +1,14 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import FormInput from './FormInput';
 
 const BmiCalulator = () => {
   const [heightUnit, setHeightUnit] = useState('');
   const [weightUnit, setWeightUnit] = useState('');
   const [unit, setUnit] = useState('');
+
+  useEffect(() => {
+    console.log(unit)
+  }, [unit]);
 
   const onChangeInput = e => {};
 

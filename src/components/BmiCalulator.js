@@ -20,8 +20,12 @@ const BmiCalulator = () => {
 
   const onChangeInput = e => {
     const { name, value } = e.target;
+    const { data } = count;
     setCount({
-      [name]: value
+      data: {
+        ...data,
+        [name]: value
+      }
     });
   };
 

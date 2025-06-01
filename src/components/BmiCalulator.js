@@ -6,9 +6,11 @@ const BmiCalulator = () => {
   const [weightUnit, setWeightUnit] = useState('kg');
   const [unit, setUnit] = useState('Metric');
   const [count, setCount] = useState({
-    heightCount: '0',
-    inchesCount: '0',
-    weightCount: '0'
+    data: {
+      heightCount: '0',
+      inchesCount: '0',
+      weightCount: '0'
+    }
   });
 
   const { heightCount, inchesCount, weightCount } = count;

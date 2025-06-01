@@ -13,7 +13,7 @@ const BmiCalulator = () => {
     }
   });
 
-  const { heightCount, inchesCount, weightCount } = count;
+  const { heightCount, inchesCount, weightCount } = count.data;
 
   useEffect(() => {
   }, []);

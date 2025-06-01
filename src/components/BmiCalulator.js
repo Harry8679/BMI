@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import FormInput from './FormInput';
 
 const BmiCalulator = () => {
-  const [height, setHeightUnit] = useState('');
+  const [heightUnit, setHeightUnit] = useState('');
   const [weightUnit, setWeightUnit] = useState('');
   const [unit, setUnit] = useState('');
 
@@ -32,9 +32,9 @@ const BmiCalulator = () => {
               </select>
             </div>
           </div>
-          <FormInput type='text' name='heightCount' title={`Height (cm)`} value='' onChange={onChangeInput} />
-          <FormInput type='text' name='inchesCount' title={`(in)`} value='' onChange={onChangeInput} />
-          <FormInput type='text' name='weightCount' title={`Weight (kg)`} value='' onChange={onChangeInput} />
+          <FormInput type='text' name='heightCount' title={`Height (${heightUnit})`} value='' onChange={onChangeInput} />
+          {unit === 'Imperial' ? <FormInput type='text' name='inchesCount' title={`(in)`} value='' onChange={onChangeInput} /> : ''}
+          <FormInput type='text' name='weightCount' title={`Weight (${weightUnit})`} value='' onChange={onChangeInput} />
         </div>
         <button className='button' type='submit'>Reset</button>
       </div>

@@ -72,7 +72,7 @@ const BmiCalulator = () => {
           {unit === 'Imperial' ? <FormInput type='text' name='inchesCount' title={`(in)`} value={inchesCount} onChange={onChangeInput} /> : ''}
           <FormInput type='text' name='weightCount' title={`Weight (${weightUnit})`} value={weightCount} onChange={onChangeInput} />
         </div>
-        <button className='button' type='submit'>Reset</button>
+        <button className='button' type='submit' onClick={resetData}>Reset</button>
       </div>
     </>
   )

@@ -40,6 +40,8 @@ const BmiCalulator = () => {
     }
   };
 
+  const metricBMI = (height, weight) => {}
+
   const resetData = e => {
     e.preventDefault();
 

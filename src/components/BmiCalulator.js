@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import FormInput from './FormInput';
 
 const BmiCalulator = () => {
-  const [heightUnit, setHeightUnit] = useState('m');
+  const [heightUnit, setHeightUnit] = useState('cm');
   const [weightUnit, setWeightUnit] = useState('kg');
   const [unit, setUnit] = useState('Metric');
   const [count, setCount] = useState({
@@ -33,7 +33,7 @@ const BmiCalulator = () => {
   const onSelectTag = e => {
     setUnit(e.target.value);
     if (e.target.value === 'Metric') {
-      setHeightUnit('m');
+      setHeightUnit('cm');
       setWeightUnit('kg');
     } else {
       setHeightUnit('ft');
@@ -59,7 +59,7 @@ const BmiCalulator = () => {
         weightCount: '0'
       }
     });
-    setHeightUnit('m');
+    setHeightUnit('cm');
     setWeightUnit('kg');
   }
 

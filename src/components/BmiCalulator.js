@@ -40,7 +40,12 @@ const BmiCalulator = () => {
     }
   };
 
-  const metricBMI = (height, weight) => {}
+  const metricBMI = (height, weight) => {
+    if (height > 0 && weight > 0) {
+      const bmi = weight / (height * height);
+      console.log(bmi);
+    }
+  }
 
   const resetData = e => {
     e.preventDefault();

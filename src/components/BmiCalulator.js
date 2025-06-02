@@ -40,6 +40,18 @@ const BmiCalulator = () => {
     }
   };
 
+  const resetData = e => {
+    e.preventDefault();
+    setUnit('Metric');
+    setCount({
+      data: {
+        heightCount: '0',
+        inchesCount: '0',
+        weightCount: '0'
+      }
+    });
+  }
+
   return (
     <>
       <div className='bmi-inputs'>

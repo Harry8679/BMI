@@ -42,6 +42,7 @@ const BmiCalulator = () => {
 
   const resetData = e => {
     e.preventDefault();
+
     setUnit('Metric');
     setCount({
       data: {
@@ -50,6 +51,8 @@ const BmiCalulator = () => {
         weightCount: '0'
       }
     });
+    setHeightUnit('cm');
+    setWeightUnit('kg');
   }
 
   return (

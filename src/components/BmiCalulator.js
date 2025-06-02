@@ -16,7 +16,8 @@ const BmiCalulator = () => {
   const { heightCount, inchesCount, weightCount } = count.data;
 
   useEffect(() => {
-  }, []);
+    metricBMI(weightCount, heightCount);
+  }, [heightCount, weightCount]);
 
   const onChangeInput = e => {
     const { name, value } = e.target;
